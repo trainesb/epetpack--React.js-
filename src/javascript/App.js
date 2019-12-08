@@ -1,21 +1,14 @@
-import React, {Component, Fragment} from "react";
+import React, {Component} from "react";
 
-import Head from "./components/Head.jsx";
-import CarouselTestimonies from "./components/CarouselTestimonies.jsx";
-import Body from "./components/Body.jsx";
-import Footer from "./components/Footer.jsx";
-
+import Routes from "./Routes.jsx";
 
 class App extends Component {
 
     render() {
         return(
-        	<Fragment>
-        		<Head />
-        		<CarouselTestimonies />
-        		<Body />
-        		<Footer />
-        	</Fragment>
+            <div>
+                <Routes />
+            </div>
         );
     }
 }

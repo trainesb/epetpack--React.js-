@@ -9,7 +9,7 @@ class Testimonies extends Component {
         return (
             <Toast>
                 <Toast.Header>
-                    <Image src='' Rounded/>
+                    <Image src='' rounded/>
                     <strong className='mr-auto'>Name</strong>
                     <small>11 min ago</small>
                 </Toast.Header>
