@@ -1,24 +1,132 @@
 0 info it worked if it ends with ok
-1 verbose cli [ '/usr/bin/node', '/usr/bin/npm', 'adduser' ]
+1 verbose cli [ '/usr/bin/node', '/usr/bin/npm', 'publish' ]
 2 info using npm@3.5.2
 3 info using node@v8.10.0
-4 verbose stack Error: canceled
-4 verbose stack     at Interface.<anonymous> (/usr/share/npm/node_modules/read/lib/read.js:66:13)
-4 verbose stack     at emitNone (events.js:106:13)
-4 verbose stack     at Interface.emit (events.js:208:7)
-4 verbose stack     at Interface._ttyWrite (readline.js:775:16)
-4 verbose stack     at ReadStream.onkeypress (readline.js:160:10)
-4 verbose stack     at emitTwo (events.js:126:13)
-4 verbose stack     at ReadStream.emit (events.js:214:7)
-4 verbose stack     at emitKeys (internal/readline.js:420:14)
-4 verbose stack     at emitKeys.next (<anonymous>)
-4 verbose stack     at ReadStream.onData (readline.js:1011:36)
-5 verbose cwd /home/oem/Desktop/epetpack
-6 error Linux 4.15.0-72-generic
-7 error argv "/usr/bin/node" "/usr/bin/npm" "adduser"
-8 error node v8.10.0
-9 error npm  v3.5.2
-10 error canceled
-11 error If you need help, you may report this error at:
-11 error     <https://github.com/npm/npm/issues>
-12 verbose exit [ 1, true ]
+4 verbose publish [ '.' ]
+5 silly cache add args [ '.', null ]
+6 verbose cache add spec .
+7 silly cache add parsed spec Result {
+7 silly cache add   raw: '.',
+7 silly cache add   scope: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: '.',
+7 silly cache add   spec: '/home/oem/Desktop/epetpack',
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory /home/oem/.npm/@trainesb/epetpack/1.0.0/package.tgz not in flight; packing
+9 info lifecycle @trainesb/epetpack@1.0.0~prepublish: @trainesb/epetpack@1.0.0
+10 silly lifecycle @trainesb/epetpack@1.0.0~prepublish: no script for prepublish, continuing
+11 verbose tar pack [ '/home/oem/.npm/@trainesb/epetpack/1.0.0/package.tgz',
+11 verbose tar pack   '/home/oem/Desktop/epetpack' ]
+12 verbose tarball /home/oem/.npm/@trainesb/epetpack/1.0.0/package.tgz
+13 verbose folder /home/oem/Desktop/epetpack
+14 verbose addLocalTarball adding from inside cache /home/oem/.npm/@trainesb/epetpack/1.0.0/package.tgz
+15 silly cache afterAdd @trainesb/epetpack@1.0.0
+16 verbose afterAdd /home/oem/.npm/@trainesb/epetpack/1.0.0/package/package.json not in flight; writing
+17 verbose afterAdd /home/oem/.npm/@trainesb/epetpack/1.0.0/package/package.json written
+18 silly publish { name: '@trainesb/epetpack',
+18 silly publish   version: '1.0.0',
+18 silly publish   description: 'Pet Pack',
+18 silly publish   main: 'index.js',
+18 silly publish   scripts:
+18 silly publish    { start: 'webpack-dev-server --open --mode=development --hot',
+18 silly publish      dev: 'webpack --mode=development --config webpack.config.js',
+18 silly publish      prod: 'webpack --mode=production --config webpack.config.js' },
+18 silly publish   keywords: [],
+18 silly publish   author: '',
+18 silly publish   repository:
+18 silly publish    { type: 'git',
+18 silly publish      url: 'git+ssh://git@github.com/trainesb/epetpack.git' },
+18 silly publish   license: 'ISC',
+18 silly publish   dependencies:
+18 silly publish    { autoprefixer: '^9.7.3',
+18 silly publish      bootstrap: '^4.4.1',
+18 silly publish      fibers: '^4.0.2',
+18 silly publish      jquery: '^3.4.1',
+18 silly publish      'node-sass': '^4.13.0',
+18 silly publish      'popper.js': '^1.16.0',
+18 silly publish      'postcss-loader': '^3.0.0',
+18 silly publish      react: '^16.12.0',
+18 silly publish      'react-bootstrap': '^1.0.0-beta.16',
+18 silly publish      'react-dom': '^16.12.0',
+18 silly publish      'react-router': '^5.1.2',
+18 silly publish      'react-router-dom': '^5.1.2',
+18 silly publish      sass: '^1.23.7',
+18 silly publish      'sass-loader': '^8.0.0',
+18 silly publish      'styled-components': '^4.4.1' },
+18 silly publish   devDependencies:
+18 silly publish    { '@babel/core': '^7.7.4',
+18 silly publish      '@babel/preset-env': '^7.7.4',
+18 silly publish      '@babel/preset-react': '^7.7.4',
+18 silly publish      'babel-core': '^6.26.3',
+18 silly publish      'babel-loader': '^8.0.6',
+18 silly publish      'babel-plugin-transform-class-properties': '^6.24.1',
+18 silly publish      'babel-preset-es2015': '^6.24.1',
+18 silly publish      'babel-preset-react': '^6.24.1',
+18 silly publish      'css-loader': '^3.2.1',
+18 silly publish      'file-loader': '^5.0.2',
+18 silly publish      'html-webpack-plugin': '^3.2.0',
+18 silly publish      'node-sass': '^4.13.0',
+18 silly publish      'sass-loader': '^8.0.0',
+18 silly publish      'style-loader': '^1.0.1',
+18 silly publish      'url-loader': '^3.0.0',
+18 silly publish      webpack: '^4.41.2',
+18 silly publish      'webpack-cli': '^3.3.10',
+18 silly publish      'webpack-dev-server': '^3.9.0' },
+18 silly publish   gitHead: 'e44e7ec6aaadb24975fee146b296978b1c2af9cd',
+18 silly publish   bugs: { url: 'https://github.com/trainesb/epetpack/issues' },
+18 silly publish   readme: 'ERROR: No README data found!',
+18 silly publish   homepage: 'https://github.com/trainesb/epetpack#readme',
+18 silly publish   _id: '@trainesb/epetpack@1.0.0',
+18 silly publish   _shasum: '1471d02413c0e8be3a267637c12fc5dfe5d13a28',
+18 silly publish   _from: '.' }
+19 verbose getPublishConfig undefined
+20 silly mapToRegistry name @trainesb/epetpack
+21 silly mapToRegistry scope (from package name) @trainesb
+22 verbose mapToRegistry no registry URL found in name for scope @trainesb
+23 silly mapToRegistry using default registry
+24 silly mapToRegistry registry https://npm.pkg.github.com/trainesb
+25 silly mapToRegistry uri https://npm.pkg.github.com/trainesb/@trainesb%2fepetpack
+26 verbose publish registryBase https://npm.pkg.github.com/trainesb/
+27 silly publish uploading /home/oem/.npm/@trainesb/epetpack/1.0.0/package.tgz
+28 verbose request uri https://npm.pkg.github.com/trainesb/@trainesb%2fepetpack
+29 verbose request sending authorization for write operation
+30 info attempt registry request try #1 at 3:40:08 PM
+31 verbose request using bearer token for auth
+32 verbose request id d9d47225084d252e
+33 http request PUT https://npm.pkg.github.com/trainesb/@trainesb%2fepetpack
+34 http 401 https://npm.pkg.github.com/trainesb/@trainesb%2fepetpack
+35 verbose headers { 'content-security-policy': 'default-src \'none\';',
+35 verbose headers   'content-type': 'application/json; charset=utf-8',
+35 verbose headers   server: 'GitHub Registry',
+35 verbose headers   'strict-transport-security': 'max-age=31536000;',
+35 verbose headers   'x-content-type-options': 'nosniff',
+35 verbose headers   'x-frame-options': 'DENY',
+35 verbose headers   'x-xss-protection': '1; mode=block',
+35 verbose headers   date: 'Mon, 09 Dec 2019 20:40:08 GMT',
+35 verbose headers   'content-length': '168',
+35 verbose headers   'x-github-request-id': '86C6:0D9D:008C:0679:5DEEB128' }
+36 verbose request invalidating /home/oem/.npm/npm.pkg.github.com/trainesb/_40trainesb_252fepetpack on PUT
+37 error publish Failed PUT 401
+38 verbose stack Error: Your request could not be authenticated by the GitHub Packages service. Please ensure your access token is valid and has the appropriate scopes configured. : trainesb
+38 verbose stack     at makeError (/usr/share/npm/node_modules/npm-registry-client/lib/request.js:264:12)
+38 verbose stack     at CachingRegistryClient.<anonymous> (/usr/share/npm/node_modules/npm-registry-client/lib/request.js:252:14)
+38 verbose stack     at Request._callback (/usr/share/npm/node_modules/npm-registry-client/lib/request.js:172:14)
+38 verbose stack     at Request.self.callback (/usr/share/npm/node_modules/request/request.js:198:22)
+38 verbose stack     at emitTwo (events.js:126:13)
+38 verbose stack     at Request.emit (events.js:214:7)
+38 verbose stack     at Request.<anonymous> (/usr/share/npm/node_modules/request/request.js:1082:10)
+38 verbose stack     at emitOne (events.js:121:20)
+38 verbose stack     at Request.emit (events.js:211:7)
+38 verbose stack     at IncomingMessage.<anonymous> (/usr/share/npm/node_modules/request/request.js:1009:12)
+39 verbose statusCode 401
+40 verbose pkgid trainesb
+41 verbose cwd /home/oem/Desktop/epetpack
+42 error Linux 4.15.0-72-generic
+43 error argv "/usr/bin/node" "/usr/bin/npm" "publish"
+44 error node v8.10.0
+45 error npm  v3.5.2
+46 error code E401
+47 error Your request could not be authenticated by the GitHub Packages service. Please ensure your access token is valid and has the appropriate scopes configured. : trainesb
+48 error If you need help, you may report this error at:
+48 error     <https://github.com/npm/npm/issues>
+49 verbose exit [ 1, true ]
