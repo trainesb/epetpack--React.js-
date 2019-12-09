@@ -1,5 +1,5 @@
 {
-  "name": "epetpack",
+  "name": "@trainesb/epetpack",
   "version": "1.0.0",
   "description": "Pet Pack",
   "main": "index.js",
@@ -10,6 +10,7 @@
   },
   "keywords": [],
   "author": "",
+  "repository": "https://github.com/trainesb/epetpack.git",
   "license": "ISC",
   "dependencies": {
     "autoprefixer": "^9.7.3",
