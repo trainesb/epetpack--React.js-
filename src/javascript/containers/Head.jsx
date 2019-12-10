@@ -31,7 +31,7 @@ class Head extends Component {
     handleScroll(event) {
         const scroll = window.scrollY;
 
-        if(scroll > 77 && !this.state.fixhead) {
+        if(scroll > 30 && !this.state.fixhead) {
             this.setState({
                 scrollPosition: scroll,
                 fixhead: true
@@ -39,7 +39,7 @@ class Head extends Component {
 
             document.getElementsByClassName('head')[0].classList.add('fixed');
         }
-        else if(scroll < 50 && this.state.fixhead) {
+        else if(scroll < 30 && this.state.fixhead) {
             this.setState({
                 scrollPosition: scroll,
                 fixhead: false
