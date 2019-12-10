@@ -72,7 +72,7 @@
 18 silly publish      webpack: '^4.41.2',
 18 silly publish      'webpack-cli': '^3.3.10',
 18 silly publish      'webpack-dev-server': '^3.9.0' },
-18 silly publish   gitHead: 'e44e7ec6aaadb24975fee146b296978b1c2af9cd',
+18 silly publish   gitHead: '996cfb9943901cd0f44e48d8b23b0a2edd1ec2a9',
 18 silly publish   bugs: { url: 'https://github.com/trainesb/epetpack/issues' },
 18 silly publish   readme: 'ERROR: No README data found!',
 18 silly publish   homepage: 'https://github.com/trainesb/epetpack#readme',
@@ -90,9 +90,9 @@
 27 silly publish uploading /home/oem/.npm/@trainesb/epetpack/1.0.0/package.tgz
 28 verbose request uri https://npm.pkg.github.com/trainesb/@trainesb%2fepetpack
 29 verbose request sending authorization for write operation
-30 info attempt registry request try #1 at 3:40:08 PM
+30 info attempt registry request try #1 at 3:40:27 PM
 31 verbose request using bearer token for auth
-32 verbose request id d9d47225084d252e
+32 verbose request id 275c4ad264d7134f
 33 http request PUT https://npm.pkg.github.com/trainesb/@trainesb%2fepetpack
 34 http 401 https://npm.pkg.github.com/trainesb/@trainesb%2fepetpack
 35 verbose headers { 'content-security-policy': 'default-src \'none\';',
@@ -102,9 +102,9 @@
 35 verbose headers   'x-content-type-options': 'nosniff',
 35 verbose headers   'x-frame-options': 'DENY',
 35 verbose headers   'x-xss-protection': '1; mode=block',
-35 verbose headers   date: 'Mon, 09 Dec 2019 20:40:08 GMT',
+35 verbose headers   date: 'Mon, 09 Dec 2019 20:40:28 GMT',
 35 verbose headers   'content-length': '168',
-35 verbose headers   'x-github-request-id': '86C6:0D9D:008C:0679:5DEEB128' }
+35 verbose headers   'x-github-request-id': '86CC:4516:0067:03D7:5DEEB13B' }
 36 verbose request invalidating /home/oem/.npm/npm.pkg.github.com/trainesb/_40trainesb_252fepetpack on PUT
 37 error publish Failed PUT 401
 38 verbose stack Error: Your request could not be authenticated by the GitHub Packages service. Please ensure your access token is valid and has the appropriate scopes configured. : trainesb

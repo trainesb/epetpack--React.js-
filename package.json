@@ -10,10 +10,6 @@
   },
   "keywords": [],
   "author": "",
-  "repository" : {
-    "type" : "git",
-    "url": "ssh://git@github.com/trainesb/epetpack.git"
-  },
   "license": "ISC",
   "dependencies": {
     "autoprefixer": "^9.7.3",

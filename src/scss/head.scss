@@ -1,4 +1,17 @@
 div.head {
-	background-color: black;
-	color: white;
+	background: #000;
+	width: 100%;
+	text-align: center;
+
+	img {
+		max-height: 100%;
+		max-width: 100%;
+		color: #fff;
+	}
+
+	h1 {
+		margin-bottom: 4px;
+		margin-top: 4px;
+		color: #fff;
+	}
 }
