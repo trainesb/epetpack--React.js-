@@ -2,7 +2,7 @@ div.side-nav {
 	width: 150px;
 	display: inline-block;
 	position: absolute;
-	margin-top: 12px;
+	top: 180px;
 
 	button {
 		text-align: left;
@@ -14,6 +14,9 @@ div.side-nav {
 		height: 50px;
 		margin-bottom: 25px;
 
+		-webkit-transition: margin-bottom 0.5s;
+		transition: margin-bottom 0.5s;
+
 		a {
 			margin-left: 5px;
 			text-decoration: none;
@@ -23,5 +26,14 @@ div.side-nav {
 
 	button:last-of-type {
 		margin-bottom: 0;
+	}
+}
+
+div.side-nav.fixed {
+	position: fixed;
+	top: 100px;
+
+	button {
+		margin-bottom: 12px;
 	}
 }
