@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import Button from '../presentational/Button.jsx';
+import Link from '../presentational/Link.jsx';
 
 import '../../scss/sidenav.scss';
 
@@ -57,14 +57,14 @@ class SideNav extends Component {
             <div className='side-nav' onScroll={this.handleScroll}>
                 <div className='left-box'></div>
                 <div className='right-box'>
-                    <Button active={true} path={'/'} text={'Home'} onClick={this.handleClick}/>
-                    <Button active={false} path={'/shop'} text={'Shop'} onClick={this.handleClick}/>
-                    <Button active={false} path={'/mission'} text={'Mission'} onClick={this.handleClick}/>
-                    <Button active={false} path={'/about'} text={'About'} onClick={this.handleClick}/>
-                    <Button active={false} path={'/pack-members'} text={'The Pack'} onClick={this.handleClick}/>
-                    <Button active={false} path={'/reviews'} text={'Reviews'} onClick={this.handleClick}/>
-                    <Button active={false} path={'/faq'} text={'FAQ'} onClick={this.handleClick}/>
-                    <Button active={false} path={'/contact'} text={'Contact'} onClick={this.handleClick}/>
+                    <Link active={true} path={'/'} text={'Home'} onClick={this.handleClick}/>
+                    <Link active={false} path={'/shop'} text={'Shop'} onClick={this.handleClick}/>
+                    <Link active={false} path={'/mission'} text={'Mission'} onClick={this.handleClick}/>
+                    <Link active={false} path={'/about'} text={'About'} onClick={this.handleClick}/>
+                    <Link active={false} path={'/pack-members'} text={'The Pack'} onClick={this.handleClick}/>
+                    <Link active={false} path={'/reviews'} text={'Reviews'} onClick={this.handleClick}/>
+                    <Link active={false} path={'/faq'} text={'FAQ'} onClick={this.handleClick}/>
+                    <Link active={false} path={'/contact'} text={'Contact'} onClick={this.handleClick}/>
                 </div>
             </div>
         );
