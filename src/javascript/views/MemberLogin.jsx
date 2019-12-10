@@ -3,22 +3,22 @@ import React, {Component} from "react";
 import Head from "../containers/Head.jsx";
 import Title from "../presentational/Title.jsx";
 import SideNav from "../containers/SideNav.jsx";
-import MemberLogin from "../containers/MemberLogin.jsx";
+import Login from "../containers/Login.jsx";
 import Footer from "../containers/Footer.jsx";
 
 
-class PackMembers extends Component {
+class MemberLogin extends Component {
 
     render() {
         return(
-        	<div id="PackMembers">
+        	<div id="Login">
         		<Head />
 
-                <Title title={'Pack Members'} />
+                <Title title={'Login'} />
 
                 <SideNav />
 
-                <MemberLogin />
+                <Login />
 
         		<Footer />
         	</div>
@@ -26,4 +26,4 @@ class PackMembers extends Component {
     }
 }
 
-export default PackMembers;
+export default MemberLogin;

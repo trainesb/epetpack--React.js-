@@ -1,10 +1,11 @@
 import React, {Component} from "react";
 
 import Input from '../presentational/Input.jsx';
+import Link from '../presentational/Link.jsx';
 
 import "../../scss/member-login.scss";
 
-class MemberLogin extends Component {
+class Login extends Component {
     constructor(props) {
         super(props);
 
@@ -17,7 +18,7 @@ class MemberLogin extends Component {
     }
 
     handleSubmit(event) {
-        console.log('Submitted' + this.state,value);
+        console.log('Submitted' + this.state.value);
         event.preventDefault();
     }
 
@@ -32,9 +33,10 @@ class MemberLogin extends Component {
                 <Input type={'password'} value={this.state.password} name={'password'}/>
 
                 <p><Input type={"submit"} value={"Login"} name={"login"} /></p>
+                <Link path={'/register'} text={'Register'} />
             </form>
         );
     }
 }
 
-export default MemberLogin;
+export default Login;

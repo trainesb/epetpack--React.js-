@@ -25,7 +25,7 @@ class ContactForm extends Component {
     }
 
     handleSubmit(event) {
-        console.log('Submitted' + this.state,value);
+        console.log('Submitted' + this.state.value);
         event.preventDefault();
     }
 

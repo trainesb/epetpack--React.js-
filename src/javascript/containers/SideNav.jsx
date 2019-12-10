@@ -54,7 +54,7 @@ class SideNav extends Component {
                     <Link active={false} path={'/shop'} text={'Shop'} />
                     <Link active={false} path={'/mission'} text={'Mission'} />
                     <Link active={false} path={'/about'} text={'About'} />
-                    <Link active={false} path={'/pack-members'} text={'The Pack'} />
+                    <Link active={false} path={'/login'} text={'Login'} />
                     <Link active={false} path={'/reviews'} text={'Reviews'} />
                     <Link active={false} path={'/faq'} text={'FAQ'} />
                     <Link active={false} path={'/contact'} text={'Contact'} />

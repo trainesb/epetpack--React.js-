@@ -63,7 +63,14 @@ div.side-nav.fixed {
 	}
 }
 
-div#About div.side-nav, div#Reviews div.side-nav, div#PackMembers div.side-nav, div#FAQ div.side-nav, div#Shop div.side-nav, div#Mission div.side-nav, div#Contact div.side-nav  {
+div#About div.side-nav,
+div#Reviews div.side-nav,
+div#Login div.side-nav,
+div#FAQ div.side-nav,
+div#Shop div.side-nav,
+div#Mission div.side-nav,
+div#Contact div.side-nav,
+div#Register div.side-nav  {
 	top: 100px;
 
 	div.left-box {
