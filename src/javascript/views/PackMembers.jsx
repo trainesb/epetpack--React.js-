@@ -6,15 +6,16 @@ import SideNav from "../containers/SideNav.jsx";
 import Footer from "../containers/Footer.jsx";
 
 
-class Shop extends Component {
+class PackMembers extends Component {
 
     render() {
         return(
-        	<div id="Shop">
+        	<div id="PackMembers">
         		<Head />
 
-                <Title title={'Shop'} />
-        		<SideNav />
+                <Title title={'Pack Members'} />
+
+                <SideNav />
 
         		<Footer />
         	</div>
@@ -22,4 +23,4 @@ class Shop extends Component {
     }
 }
 
-export default Shop;
+export default PackMembers;

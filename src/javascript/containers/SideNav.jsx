@@ -50,6 +50,7 @@ class SideNav extends Component {
     render() {
         return (
             <div className='side-nav' onScroll={this.handleScroll}>
+                <Button path={'/'} text={'Home'} />
                 <Button path={'/shop'} text={'Shop'} />
                 <Button path={'/mission'} text={'Mission'} />
                 <Button path={'/about'} text={'About'} />
