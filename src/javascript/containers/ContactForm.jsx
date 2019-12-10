@@ -1,5 +1,7 @@
 import React, {Component} from "react";
 
+import Input from '../presentational/Input.jsx';
+
 import "../../scss/contact-form.scss";
 
 class ContactForm extends Component {
@@ -31,26 +33,21 @@ class ContactForm extends Component {
         return(
             <div id='contact-form'>
                 <form onSubmit={this.handleSubmit}>
-                    <p>
-                        <label>First Name:</label>
-                        <input type="text" value={this.state.firstName} onChange={this.handleChange} />
-                    </p>
-                    <p>
-                        <label>Last Name:</label>
-                        <input type="text" value={this.state.lastName} onChange={this.handleChange} />
-                    </p>
-                    <p>
-                        <label>Email:</label>
-                        <input type="email" value={this.state.email} onChange={this.handleChange} />
-                    </p>
-                    <p>
-                        <label>Subject:</label>
-                        <input type="text" value={this.state.subject} onChange={this.handleChange} />
-                    </p>
-                    <p>
-                        <label>Message:</label>
-                        <textarea type="text" value={this.state.message} onChange={this.handleChange} />
-                    </p>
+
+                    <p>First Name:</p>
+                    <Input type={'text'} value={this.state.firstName} />
+                    
+                    <p>Last Name:</p>
+                    <Input type={'text'} value={this.state.lastName} />
+                    
+                    <p>Email:</p>
+                    <Input type={'email'} value={this.state.email} />
+                    
+                    <p>Subject:</p>
+                    <Input type={'text'} value={this.state.subject} />
+                    
+                    <p>Message:</p>
+                    <Input type={'textarea'} value={this.state.message} />
 
                     <p><input type="submit" value="submit" /></p>
                 </form>

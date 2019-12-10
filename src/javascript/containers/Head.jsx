@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import Image from '../presentational/Image.jsx';
+import Figure from '../presentational/Figure.jsx';
 import Title from '../presentational/Title.jsx';
 
 import Logo from '../../images/CatPack_Logo_Print.png';
@@ -16,13 +16,13 @@ class Head extends Component {
                 <div className='head-filler'></div>
             	<div className='head'>
             		<div className='left'>
-                    	<Image path={Logo} alt={'Cat Pack Logo'} />
+                    	<Figure src={Logo} alt={'Cat Pack Logo'} text={''}/>
                     </div>
                     <div className='center'>
                     	<Title title='Pet Pack, LLC' />
                     </div>
                     <div className='right'>
-                    	<Image path={Logo} alt={'Cat Pack Logo'} />
+                    	<Figure src={Logo} alt={'Cat Pack Logo'} text={''}/>
                 	</div>
                 </div>
             </div>
