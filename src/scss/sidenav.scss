@@ -4,8 +4,22 @@ div.side-nav {
 	position: absolute;
 	top: 180px;
 
+	div.left-box {
+		background-color: #000;
+		width: 30px;
+		height: 577px;
+
+		-webkit-transition: height 0.5s;
+		transition: height 0.5s;
+	}
+
+	div.right-box {
+		position: absolute;
+		top: 0;
+	}
+
 	a {
-		text-align: left;
+		text-align: center;
 		background: #000;
 		border-top-right-radius: 50%;
 		border-bottom-right-radius: 50%;
@@ -39,7 +53,11 @@ div.side-nav.fixed {
 	position: fixed;
 	top: 100px;
 
+	div.left-box {
+		height: 450px;
+	}
+
 	a {
-		margin-bottom: 12px;
+		margin-bottom: 8px;
 	}
 }

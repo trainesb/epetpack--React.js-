@@ -55,14 +55,17 @@ class SideNav extends Component {
     render() {
         return (
             <div className='side-nav' onScroll={this.handleScroll}>
-                <Button active={true} path={'/'} text={'Home'} onClick={this.handleClick}/>
-                <Button active={false} path={'/shop'} text={'Shop'} onClick={this.handleClick}/>
-                <Button active={false} path={'/mission'} text={'Mission'} onClick={this.handleClick}/>
-                <Button active={false} path={'/about'} text={'About'} onClick={this.handleClick}/>
-                <Button active={false} path={'/pack-members'} text={'Pack Members'} onClick={this.handleClick}/>
-                <Button active={false} path={'/reviews'} text={'Reviews'} onClick={this.handleClick}/>
-                <Button active={false} path={'/faq'} text={'FAQ'} onClick={this.handleClick}/>
-                <Button active={false} path={'/contact'} text={'Contact'} onClick={this.handleClick}/>
+                <div className='left-box'></div>
+                <div className='right-box'>
+                    <Button active={true} path={'/'} text={'Home'} onClick={this.handleClick}/>
+                    <Button active={false} path={'/shop'} text={'Shop'} onClick={this.handleClick}/>
+                    <Button active={false} path={'/mission'} text={'Mission'} onClick={this.handleClick}/>
+                    <Button active={false} path={'/about'} text={'About'} onClick={this.handleClick}/>
+                    <Button active={false} path={'/pack-members'} text={'Pack Members'} onClick={this.handleClick}/>
+                    <Button active={false} path={'/reviews'} text={'Reviews'} onClick={this.handleClick}/>
+                    <Button active={false} path={'/faq'} text={'FAQ'} onClick={this.handleClick}/>
+                    <Button active={false} path={'/contact'} text={'Contact'} onClick={this.handleClick}/>
+                </div>
             </div>
         );
     }
