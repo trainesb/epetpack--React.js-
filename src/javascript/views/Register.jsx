@@ -1,7 +1,5 @@
 import React, {Component} from "react";
 
-import Input from "../presentational/Input.jsx";
-
 import Head from "../containers/Head.jsx";
 import Title from "../presentational/Title.jsx";
 import SideNav from "../containers/SideNav.jsx";
@@ -21,11 +19,32 @@ class Register extends Component {
         };
 
         this.handleSubmit = this.handleSubmit.bind(this);
+        this.handleFormChange = this.handleFormChange.bind(this);
     }
 
     handleSubmit(event) {
         console.log('Submitted' + this.state.value);
         event.preventDefault();
+    }
+
+    logFields() {
+        const { firstName, lastName, email, userName, password, passwordCheck } = this.state;
+        console.log('\nFirst: ' + firstName); 
+        console.log('\nLast: ' + lastName);
+        console.log('\nemail: ' + email);
+        console.log('\nUser: ' + userName); 
+        console.log('\nPassword: ' + password);
+        console.log('\nPassword: ' + passwordCheck);
+    }
+
+    handleFormChange(e) {
+        const target = e.target;
+        const value = target.type === 'checkbox' ? target.checked : target.value;
+        const name = target.name;
+
+        this.setState({
+            [name]: value,
+        }, () => { this.logFields() });
     }
 
     render() {
@@ -39,24 +58,24 @@ class Register extends Component {
 
                 <form id='register-form' onSubmit={this.handleSubmit}>
                     <p>First Name:</p>
-                    <Input type={'text'} value={this.state.firstName} name={'firstName'} />
+                    <input type='text' name='firstName' value={this.state.firstName} onChange={this.handleFormChange}/>
 
                     <p>Last Name:</p>
-                    <Input type={'text'} value={this.state.lastName} name={'lastName'} />
+                    <input type='text' name='lastName' value={this.state.lastName} onChange={this.handleFormChange}/>
 
                     <p>Email:</p>
-                    <Input type={'email'} value={this.state.email} name={'email'} />
+                    <input type='email' name='email' value={this.state.email} onChange={this.handleFormChange}/>
 
                     <p>Username:</p>
-                    <Input type={'text'} value={this.state.userName} name={'userName'} />
+                    <input type='text' name='userName' value={this.state.userName} onChange={this.handleFormChange}/>
                     
                     <p>Password:</p>
-                    <Input type={'password'} value={this.state.password} name={'password'} />
+                    <input type='password' name='password'  value={this.state.password} onChange={this.handleFormChange}/>
 
                     <p>Re-Enter Password:</p>
-                    <Input type={'password'} value={this.state.passwordCheck} name={'passwordCheck'} />
+                    <input type='password' name='passwordCheck' value={this.state.passwordCheck} onChange={this.handleFormChange}/>
 
-                    <p><Input type={"submit"} value={"Submit"} name={"submit"} /></p>
+                    <p><input type="submit" value="Submit" name="submit" /></p>
                 </form>
 
                 <Footer />

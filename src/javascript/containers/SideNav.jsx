@@ -10,10 +10,12 @@ class SideNav extends Component {
 
         this.state = {
             scrollPosition: 0,
-            fixhead: false
+            fixhead: false,
+            activeClasses: [true, false, false, false, false, false, false, false],
         };
 
         this.handleScroll = this.handleScroll.bind(this);
+        this.handleClick = this.handleClick.bind(this);
     }
 
     componentDidMount() {
@@ -45,19 +47,26 @@ class SideNav extends Component {
         }
     }
 
+    handleClick(index) {
+        const old = document.getElementsByClassName('active').classList;
+        console.log('Old: ' + old);
+        console.log('\nIndex: '+ this.state.activeClasses[index]);
+    }
+
     render() {
+        const activeClasses = this.state.activeClasses.slice();
         return (
             <div className='side-nav' onScroll={this.handleScroll}>
                 <div className='left-box'></div>
                 <div className='right-box'>
-                    <Link active={true} path={'/'} text={'Home'} />
-                    <Link active={false} path={'/shop'} text={'Shop'} />
-                    <Link active={false} path={'/mission'} text={'Mission'} />
-                    <Link active={false} path={'/about'} text={'About'} />
-                    <Link active={false} path={'/login'} text={'Login'} />
-                    <Link active={false} path={'/reviews'} text={'Reviews'} />
-                    <Link active={false} path={'/faq'} text={'FAQ'} />
-                    <Link active={false} path={'/contact'} text={'Contact'} />
+                    <Link active={activeClasses[0]} path={'/'} text={'Home'} onClick={this.handleClick(0)} />
+                    <Link active={activeClasses[1]} path={'/shop'} text={'Shop'} onClick={this.handleClick(1)} />
+                    <Link active={activeClasses[2]} path={'/mission'} text={'Mission'} onClick={this.handleClick(2)} />
+                    <Link active={activeClasses[3]} path={'/about'} text={'About'} onClick={this.handleClick(3)} />
+                    <Link active={activeClasses[4]} path={'/login'} text={'Login'} onClick={this.handleClick(4)} />
+                    <Link active={activeClasses[5]} path={'/reviews'} text={'Reviews'} onClick={this.handleClick(5)} />
+                    <Link active={activeClasses[6]} path={'/faq'} text={'FAQ'} onClick={this.handleClick(6)} />
+                    <Link active={activeClasses[7]} path={'/contact'} text={'Contact'} onClick={this.handleClick(7)} />
                 </div>
             </div>
         );
