@@ -56,7 +56,7 @@ class Register extends Component {
                     <p>Re-Enter Password:</p>
                     <Input type={'password'} value={this.state.passwordCheck} name={'passwordCheck'} />
 
-                    <p><Input type={"submit"} value={"Register"} name={"register"} /></p>
+                    <p><Input type={"submit"} value={"Submit"} name={"submit"} /></p>
                 </form>
 
                 <Footer />
