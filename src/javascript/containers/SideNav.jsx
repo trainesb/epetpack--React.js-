@@ -14,6 +14,7 @@ class SideNav extends Component {
         };
 
         this.handleScroll = this.handleScroll.bind(this);
+        this.handleClick = this.handleClick.bind(this);
     }
 
     componentDidMount() {
@@ -43,21 +44,25 @@ class SideNav extends Component {
 
             document.getElementsByClassName('side-nav')[0].classList.remove('fixed');
         }
+    }
 
-        console.log(scroll);
+    handleClick(event) {
+        var current = document.getElementsByClassName('active');
+        current[0].className = current[0].className.replace(' active', '');
+        this.className += ' active';
     }
 
     render() {
         return (
             <div className='side-nav' onScroll={this.handleScroll}>
-                <Button path={'/'} text={'Home'} />
-                <Button path={'/shop'} text={'Shop'} />
-                <Button path={'/mission'} text={'Mission'} />
-                <Button path={'/about'} text={'About'} />
-                <Button path={'/pack-members'} text={'Pack Members'} />
-                <Button path={'/reviews'} text={'Reviews'} />
-                <Button path={'/faq'} text={'FAQ'} />
-                <Button path={'/contact'} text={'Contact'} />
+                <Button active={true} path={'/'} text={'Home'} onClick={this.handleClick}/>
+                <Button active={false} path={'/shop'} text={'Shop'} onClick={this.handleClick}/>
+                <Button active={false} path={'/mission'} text={'Mission'} onClick={this.handleClick}/>
+                <Button active={false} path={'/about'} text={'About'} onClick={this.handleClick}/>
+                <Button active={false} path={'/pack-members'} text={'Pack Members'} onClick={this.handleClick}/>
+                <Button active={false} path={'/reviews'} text={'Reviews'} onClick={this.handleClick}/>
+                <Button active={false} path={'/faq'} text={'FAQ'} onClick={this.handleClick}/>
+                <Button active={false} path={'/contact'} text={'Contact'} onClick={this.handleClick}/>
             </div>
         );
     }

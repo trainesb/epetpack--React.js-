@@ -1,10 +1,8 @@
 import React from 'react';
 
 
-const Button = ({path, text}) => (
-	<button>
-		<a href={path}>{text}</a>
-	</button>
+const Button = ({active, path, text}) => (
+	<a className={active ? 'active' : ''} href={path}>{text}</a>
 );
 
 export default Button;
