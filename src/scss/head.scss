@@ -5,16 +5,62 @@ div.head-filler {
 
 div.head {
 	position: fixed;
-	background: #000;
+	background: #1E1317;
 	text-align: center;
 	top: 0;
-	height: 90px;
+	display: flex;
+	justify-content: center;
+	width: 100%;
 
 	div.left, div.right {
-		max-width: 5%;
+		-webkit-transition: width 0.5s;
+		transition: width 0.5s;
+		width: 7%;
+		position: relative;
+
+		img {
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			margin: auto;
+		}
 	}
 
 	h1 {
 		color: #fff;
+
+		-webkit-transition: margin 0.5s;
+		transition: margin 0.5s;
+	}
+}
+
+div.head.fixed {
+	position: fixed;
+	background: #1E1317;
+	text-align: center;
+	top: 0;
+	display: flex;
+	justify-content: center;
+	width: 100%;
+
+	div.left, div.right {
+		width: 3%;
+		position: relative;
+
+		img {
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			margin: auto;
+		}
+	}
+
+	h1 {
+		color: #fff;
+		margin: 0;
 	}
 }
