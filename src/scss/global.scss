@@ -21,11 +21,15 @@ img {
 	max-width: 100%;
 }
 
-#Shop h1, #Mission h1, #About h1, #PackMembers h1, #Reviews h1, #FAQ h1, #Contact h1 {
+#Shop h1,
+div.section,
+#Mission h1,
+#About h1,
+#PackMembers h1,
+#Reviews h1,
+#FAQ h1,
+#Contact h1 {
 	text-align: center;
-}
-
-div.section {
-	margin: 5% 20%;
-	text-align: center;
+	margin-left: 200px;
+	margin-right: 200px;
 }

@@ -1,6 +1,7 @@
+
 div.product-wrapper {
 	margin-left: 200px;
-	margin-right: 100px;
+	margin-right: 200px;
 
 	div.product-card {
 		width: 29%;
@@ -8,5 +9,9 @@ div.product-wrapper {
 		margin: 2%;
 		border: solid thin black;
 		text-align: center;
+
+		h1 {
+			margin: 12px !important;
+		}
 	}
 }
