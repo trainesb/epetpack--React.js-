@@ -2,7 +2,8 @@ div.testimonies {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
-
+	margin: 12px 0;
+	
 	div.testimony {
 		border: solid thin #000;
 		width: 20%;

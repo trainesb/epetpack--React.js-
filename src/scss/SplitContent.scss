@@ -1,19 +1,19 @@
 div.split-content {
 	display: table;
+	margin-top: 12px;
+	margin-bottom: 12px;
+	margin-left: 200px;
+	margin-right: 100px;
 
 	div.left-col {
 		display: table-cell;
-		width: 15%;
-	} 
-
-	div.center-col {
-		display: table-cell;
+		width: 60%;
 	} 
 
 	div.right-col {
 		display: table-cell;
 		vertical-align: middle;
-		text-align: center;
+		text-align: left;
 	}
 
 	p {

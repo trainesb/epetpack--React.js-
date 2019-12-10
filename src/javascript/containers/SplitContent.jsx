@@ -10,8 +10,7 @@ class SplitContent extends Component {
     render() {
         return (
             <div className='split-content'>
-                <div className='left-col'></div>
-                <div className='center-col'>
+                <div className='left-col'>
                     <Image src={Logo} alt={''} />
                 </div>
                 <div className='right-col'>

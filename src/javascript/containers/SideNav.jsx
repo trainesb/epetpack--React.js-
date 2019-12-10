@@ -27,7 +27,7 @@ class SideNav extends Component {
     handleScroll(event) {
         const scroll = window.scrollY;
 
-        if(scroll > 95 && !this.state.fixhead) {
+        if(scroll > 77 && !this.state.fixhead) {
             this.setState({
                 scrollPosition: scroll,
                 fixhead: true
@@ -35,7 +35,7 @@ class SideNav extends Component {
 
             document.getElementsByClassName('side-nav')[0].classList.add('fixed');
         }
-        else if(scroll < 95 && this.state.fixhead) {
+        else if(scroll < 77 && this.state.fixhead) {
             this.setState({
                 scrollPosition: scroll,
                 fixhead: false
