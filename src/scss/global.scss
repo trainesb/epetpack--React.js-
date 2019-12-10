@@ -1,8 +1,7 @@
 .left {
 	float: left;
 	display: inline-block;
-	width: 5%;
-	height: 5%;
+	max-width: 8%;
 }
 
 .center {
@@ -13,6 +12,5 @@
 .right {
 	float: right;
 	display: inline-block;
-	width: 5%;
-	height: 5%;
+	max-width: 8%;
 }

@@ -1,6 +1,8 @@
 import React, {Component} from "react";
 
 import Head from "../containers/Head.jsx";
+import SideNav from "../containers/SideNav.jsx";
+import Footer from "../containers/Footer.jsx";
 
 
 class Home extends Component {
@@ -9,6 +11,8 @@ class Home extends Component {
         return(
         	<div id="Home">
         		<Head />
+        		<SideNav />
+        		<Footer />
         	</div>
         );
     }

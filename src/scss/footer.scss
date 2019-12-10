@@ -1,5 +1,12 @@
 
-.foot {
+footer {
+	text-align: center;
 	background-color: black;
 	color: white;
+
+	p {
+		margin: 0;
+		padding-top: 15px;
+		padding-bottom: 15px;
+	}
 }

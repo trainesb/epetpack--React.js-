@@ -2,6 +2,7 @@ div.head {
 	background: #000;
 	width: 100%;
 	text-align: center;
+	overflow: hidden;
 
 	img {
 		max-height: 100%;
@@ -10,8 +11,6 @@ div.head {
 	}
 
 	h1 {
-		margin-bottom: 4px;
-		margin-top: 4px;
 		color: #fff;
 	}
 }
