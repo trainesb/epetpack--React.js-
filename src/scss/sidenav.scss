@@ -65,7 +65,30 @@ div.side-nav.fixed {
 
 div#About div.side-nav, div#Reviews div.side-nav, div#PackMembers div.side-nav, div#FAQ div.side-nav, div#Shop div.side-nav, div#Mission div.side-nav, div#Contact div.side-nav  {
 	top: 100px;
-	position: fixed;
+
+	div.left-box {
+		height: 577px;
+
+		-webkit-transition: height 0.5s;
+		transition: height 0.5s;
+	}
+
+	a {
+		margin-bottom: 25px;
+
+		-webkit-transition: margin-bottom 0.5s;
+		transition: margin-bottom 0.5s;
+	}
+}
+
+div#About div.side-nav.fixed,
+div#Reviews div.side-nav.fixed,
+div#PackMembers div.side-nav.fixed,
+div#FAQ div.side-nav.fixed,
+div#Shop div.side-nav.fixed,
+div#Mission div.side-nav.fixed,
+div#Contact div.side-nav.fixed  {
+	top: 52px;
 
 	div.left-box {
 		height: 450px;

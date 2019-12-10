@@ -1,4 +1,22 @@
 div.testimony-list {
-	text-align: center;
-	
+	text-align: left;
+	display: flex;
+	flex-wrap: wrap;
+	margin-left: 200px;
+	margin-right: 100px;
+
+	div.testimony {
+		width: 29%;
+		margin: 2%;
+		border: solid thin black;
+
+		div.header {
+			border-bottom: solid thin black;
+			padding-left: 12px;
+		}
+
+		div.body {
+			padding-left: 12px;
+		}
+	}
 }
