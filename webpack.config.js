@@ -6,10 +6,14 @@ module.exports = {
     entry: path.join(__dirname, './src/javascript/index.js'),
     output: {
         filename: 'main.js',
-        path: path.resolve(__dirname, 'dist')
+        path: path.resolve(__dirname, 'dist'),
+        publicPath: '/'
     },
     resolve: {
         extensions: ['.js', '.jsx']
+    },
+    devServer: {
+        historyApiFallback: true,
     },
     module: {
         rules: [

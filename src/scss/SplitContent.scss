@@ -1,0 +1,23 @@
+div.split-content {
+	display: table;
+
+	div.left-col {
+		display: table-cell;
+		width: 15%;
+	} 
+
+	div.center-col {
+		display: table-cell;
+	} 
+
+	div.right-col {
+		display: table-cell;
+		vertical-align: middle;
+		text-align: center;
+	}
+
+	p {
+		padding: 12px;
+	}
+	
+}

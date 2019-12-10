@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import Image from '../presentational/Image.jsx';
 import Title from '../presentational/Title.jsx';
 
-import Logo from '../../images/CatPack_Logo.jpg';
+import Logo from '../../images/CatPack_Logo_Print.png';
 
 import '../../scss/head.scss';
 

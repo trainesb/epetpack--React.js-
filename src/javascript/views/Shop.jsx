@@ -1,12 +1,23 @@
-import React, {Component, Fragment} from "react";
+import React, {Component} from "react";
+
+import Head from "../containers/Head.jsx";
+import SideNav from "../containers/SideNav.jsx";
+import Footer from "../containers/Footer.jsx";
 
 
 class Shop extends Component {
 
     render() {
         return(
-        	<Fragment>
-        	</Fragment>
+        	<div id="shop">
+        		<Head />
+
+        		<div className="first-content">
+        			<SideNav />
+        		</div>
+
+        		<Footer />
+        	</div>
         );
     }
 }

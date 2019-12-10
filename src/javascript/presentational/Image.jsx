@@ -1,7 +1,9 @@
 import React from "react";
 
 const Image = ({path, alt}) => (
-	<img src={path} alt={alt} />
+	<p>
+		<img src={path} alt={alt} />
+	</p>
 );
 
 export default Image;

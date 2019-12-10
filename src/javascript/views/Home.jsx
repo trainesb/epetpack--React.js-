@@ -2,6 +2,7 @@ import React, {Component} from "react";
 
 import Head from "../containers/Head.jsx";
 import SideNav from "../containers/SideNav.jsx";
+import SplitContent from "../containers/SplitContent.jsx";
 import Footer from "../containers/Footer.jsx";
 
 
@@ -11,7 +12,15 @@ class Home extends Component {
         return(
         	<div id="Home">
         		<Head />
-        		<SideNav />
+
+                <SideNav />
+        		
+                <SplitContent />
+                <SplitContent />
+                <SplitContent />
+                <SplitContent />
+                
+
         		<Footer />
         	</div>
         );

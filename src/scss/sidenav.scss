@@ -1,5 +1,8 @@
 div.side-nav {
 	width: 150px;
+	display: inline-block;
+	position: absolute;
+	margin-top: 12px;
 
 	button {
 		text-align: left;

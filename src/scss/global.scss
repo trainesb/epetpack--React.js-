@@ -1,7 +1,6 @@
 .left {
 	float: left;
 	display: inline-block;
-	max-width: 8%;
 }
 
 .center {
@@ -12,5 +11,8 @@
 .right {
 	float: right;
 	display: inline-block;
-	max-width: 8%;
+}
+
+img {
+	max-width: 100%;
 }
