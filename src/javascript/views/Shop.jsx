@@ -1,6 +1,6 @@
 import React, {Component, Fragment} from "react";
 
-import Head from "../components/Head.jsx";
+import TopNav from "../components/TopNav.jsx";
 import CarouselTestimonies from "../components/CarouselTestimonies.jsx";
 import Footer from "../components/Footer.jsx";
 
@@ -10,7 +10,7 @@ class Shop extends Component {
     render() {
         return(
         	<Fragment>
-        		<Head />
+        		<TopNav />
         		<CarouselTestimonies />
         		<Footer />
         	</Fragment>
