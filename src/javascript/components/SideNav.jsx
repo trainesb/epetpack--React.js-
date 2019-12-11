@@ -15,6 +15,10 @@ class SideNav extends Component {
                 <Navbar bg='dark' variant='dark'>
                     <style type="text/css">
                     {`
+                        .container {
+                            padding-left: 0;
+                        }
+
                         .bg-dark {
                             background-color: #000 !important;
                         }

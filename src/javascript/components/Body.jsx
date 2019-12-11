@@ -9,8 +9,6 @@ import CardColumns from 'react-bootstrap/CardColumns';
 import SideNav from './SideNav.jsx';
 import BodyCard from './BodyCard.jsx';
 
-import '../../scss/body.scss';
-
 
 class Body extends Component {
     render() {
