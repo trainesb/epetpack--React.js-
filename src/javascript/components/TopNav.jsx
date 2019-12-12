@@ -3,6 +3,7 @@ import React, {Component} from 'react';
 import Navbar from 'react-bootstrap/Navbar';
 import Container from 'react-bootstrap/Container';
 import Image from 'react-bootstrap/Image';
+import Nav from 'react-bootstrap/Nav';
 
 import Logo from '../../images/CatPack_Logo.png';
 
@@ -36,6 +37,10 @@ class TopNav extends Component {
                 	   <Image src={Logo} roundedCircle />
                        <Navbar.Text>Pet Pack, LLC</Navbar.Text>
                     </Navbar.Brand>
+
+                    <Nav>
+                        <Nav.Link href="/members">Members</Nav.Link>
+                    </Nav>
 
                     
 

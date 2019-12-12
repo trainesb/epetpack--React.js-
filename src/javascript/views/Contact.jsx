@@ -6,11 +6,11 @@ import SplitContent from "../components/SplitContent.jsx";
 import Footer from "../components/Footer.jsx";
 
 
-class Home extends Component {
+class Contact extends Component {
 
     render() {
         return(
-        	<div id="Home">
+        	<div id="Contact">
         		<TopNav />
         		<CarouselTestimonies />
         		<SplitContent />
@@ -20,4 +20,4 @@ class Home extends Component {
     }
 }
 
-export default Home;
+export default Contact;

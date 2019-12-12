@@ -11,62 +11,64 @@ import Testimonies from "./Testimonies.jsx";
 class CarouselTestimonies extends Component {
     render() {
         return (
-            <Carousel>
-                <Carousel.Item>
-                    <Container>
-                        <Row>
-                            <Col md={3}>
-                                <Testimonies />
-                            </Col>
-                            <Col md={3}>
-                                <Testimonies />
-                            </Col>
-                            <Col md={3}>
-                                <Testimonies />
-                            </Col>
-                            <Col md={3}>
-                                <Testimonies />
-                            </Col>
-                        </Row>
-                    </Container>
-                </Carousel.Item>
-                <Carousel.Item>
-                    <Container>
-                        <Row>
-                            <Col md={3}>
-                                <Testimonies />
-                            </Col>
-                            <Col md={3}>
-                                <Testimonies />
-                            </Col>
-                            <Col md={3}>
-                                <Testimonies />
-                            </Col>
-                            <Col md={3}>
-                                <Testimonies />
-                            </Col>
-                        </Row>
-                    </Container>
-                </Carousel.Item>
-                <Carousel.Item>
-                    <Container>
-                        <Row>
-                            <Col md={3}>
-                                <Testimonies />
-                            </Col>
-                            <Col md={3}>
-                                <Testimonies />
-                            </Col>
-                            <Col md={3}>
-                                <Testimonies />
-                            </Col>
-                            <Col md={3}>
-                                <Testimonies />
-                            </Col>
-                        </Row>
-                    </Container>
-                </Carousel.Item>
-            </Carousel>
+            <Container>
+                <Carousel>
+                    <Carousel.Item>
+                        <Container>
+                            <Row>
+                                <Col md={3}>
+                                    <Testimonies />
+                                </Col>
+                                <Col md={3}>
+                                    <Testimonies />
+                                </Col>
+                                <Col md={3}>
+                                    <Testimonies />
+                                </Col>
+                                <Col md={3}>
+                                    <Testimonies />
+                                </Col>
+                            </Row>
+                        </Container>
+                    </Carousel.Item>
+                    <Carousel.Item>
+                        <Container>
+                            <Row>
+                                <Col md={3}>
+                                    <Testimonies />
+                                </Col>
+                                <Col md={3}>
+                                    <Testimonies />
+                                </Col>
+                                <Col md={3}>
+                                    <Testimonies />
+                                </Col>
+                                <Col md={3}>
+                                    <Testimonies />
+                                </Col>
+                            </Row>
+                        </Container>
+                    </Carousel.Item>
+                    <Carousel.Item>
+                        <Container>
+                            <Row>
+                                <Col md={3}>
+                                    <Testimonies />
+                                </Col>
+                                <Col md={3}>
+                                    <Testimonies />
+                                </Col>
+                                <Col md={3}>
+                                    <Testimonies />
+                                </Col>
+                                <Col md={3}>
+                                    <Testimonies />
+                                </Col>
+                            </Row>
+                        </Container>
+                    </Carousel.Item>
+                </Carousel>
+            </Container>
         );
     }
 }

@@ -17,6 +17,7 @@ class SideNav extends Component {
                     {`
                         .container {
                             padding-left: 0;
+                            padding-right: 0;
                         }
 
                         .bg-dark {
@@ -25,6 +26,7 @@ class SideNav extends Component {
 
                         .nav-link {
                             color: #fff !important;
+                            border-radius: 50%;
                         }
 
                         .nav-link:hover,
@@ -38,7 +40,7 @@ class SideNav extends Component {
                         <Nav.Link href="/shop">Shop</Nav.Link>
                         <Nav.Link href="/mission">Mission</Nav.Link>
                         <Nav.Link href="/about">About</Nav.Link>
-                        <Nav.Link href="/pack-members">Pack Members</Nav.Link>
+                        
                         <Nav.Link href="/reviews">Reviews</Nav.Link>
                         <Nav.Link href="/faq">FAQ</Nav.Link>
                         <Nav.Link href="/contact">Contact</Nav.Link>
