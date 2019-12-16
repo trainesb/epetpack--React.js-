@@ -23,12 +23,26 @@ class TopNav extends Component {
                             height: 50px;
                         }
 
+                        .navbar-brand:hover span,
+                        .navbar-brand:focus span {
+                            color: grey !important;
+                        }
+
                         .navbar-text {
                             color: #fff !important;
                         }
 
+                        .place-end {
+                            margin-left: auto;
+                        }
+
                         .bg-dark {
                             background-color: #000 !important;
+                        }
+
+                        .nav-link {
+                            height: auto;
+                            padding: 12px 12px;
                         }
                     `}
                     </style>
@@ -38,8 +52,8 @@ class TopNav extends Component {
                        <Navbar.Text>Pet Pack, LLC</Navbar.Text>
                     </Navbar.Brand>
 
-                    <Nav>
-                        <Nav.Link href="/members">Members</Nav.Link>
+                    <Nav className='place-end'>
+                        <Nav.Link href="/login">Login</Nav.Link>
                     </Nav>
 
                     

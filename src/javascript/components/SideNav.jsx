@@ -12,41 +12,35 @@ class SideNav extends Component {
     render() {
         return (
             <Container>
-                <Navbar bg='dark' variant='dark'>
-                    <style type="text/css">
-                    {`
-                        .container {
-                            padding-left: 0;
-                            padding-right: 0;
-                        }
+                <style type="text/css">
+                {`
+                    .container {
+                        padding-left: 0;
+                        padding-right: 0;
+                    }
 
-                        .bg-dark {
-                            background-color: #000 !important;
-                        }
+                    .nav-link {
+                        color: #fff !important;
+                        background-color: #000 !important;
+                    }
 
-                        .nav-link {
-                            color: #fff !important;
-                            border-radius: 50%;
-                        }
-
-                        .nav-link:hover,
-                        .nav-link:focus {
-                            color: grey !important;
-                        }
-                    `}
-                    </style>
+                    .nav-link:hover,
+                    .nav-link:focus {
+                        color: #000 !important;
+                        background-color: #fff !important;
+                    }
+                `}
+                </style>
+                
+                <Nav defaultActiveKey="/home" className="flex-column">
+                    <Nav.Link href="/shop">Shop</Nav.Link>
+                    <Nav.Link href="/mission">Mission</Nav.Link>
+                    <Nav.Link href="/about">About</Nav.Link>
                     
-                    <Nav defaultActiveKey="/home" className="flex-column">
-                        <Nav.Link href="/shop">Shop</Nav.Link>
-                        <Nav.Link href="/mission">Mission</Nav.Link>
-                        <Nav.Link href="/about">About</Nav.Link>
-                        
-                        <Nav.Link href="/reviews">Reviews</Nav.Link>
-                        <Nav.Link href="/faq">FAQ</Nav.Link>
-                        <Nav.Link href="/contact">Contact</Nav.Link>
-                    </Nav>
-
-                </Navbar>
+                    <Nav.Link href="/reviews">Reviews</Nav.Link>
+                    <Nav.Link href="/faq">FAQ</Nav.Link>
+                    <Nav.Link href="/contact">Contact</Nav.Link>
+                </Nav>
             </Container>
         );
     }

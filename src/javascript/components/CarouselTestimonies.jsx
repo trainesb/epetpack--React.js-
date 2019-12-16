@@ -11,7 +11,17 @@ import Testimonies from "./Testimonies.jsx";
 class CarouselTestimonies extends Component {
     render() {
         return (
-            <Container>
+            <Container className="testimony-container">
+                <style type="text/css">
+                    {`
+                        .testimony-container {
+                            padding-top: 12px;
+                            padding-bottom: 12px;
+                        }
+                    `}
+                </style>
+
+
                 <Carousel>
                     <Carousel.Item>
                         <Container>
