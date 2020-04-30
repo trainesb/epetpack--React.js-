@@ -16,7 +16,7 @@
     "autoprefixer": "^9.7.3",
     "bootstrap": "^4.4.1",
     "fibers": "^4.0.2",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "minimist": "^1.2.5",
     "popper.js": "^1.16.0",
     "postcss-loader": "^3.0.0",
